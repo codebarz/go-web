@@ -1,4 +1,4 @@
-package main
+package web
 
 import (
 	"fmt"
@@ -8,7 +8,7 @@ import (
 
 var port = ":5050"
 
-func main() {
+func Web() {
 	http.HandleFunc("/", handlers.Home)
 	http.HandleFunc("/about", handlers.About)
 
